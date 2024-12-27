@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333333;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffcc00; /* Bright color for logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+.cta .btn {
+    background-color: #ffcc00;
+    color: #333333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+.hero {
+    background-image: url(backgrownd.jpg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+.cta-buttons .btn {
+    background-color: #ffcc00;
+    color: #333333;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+.cta-buttons .btn-secondary {
+    background-color: transparent;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background-color: #ffcc00;
+    color: #333333;
+}
+.featured-menu {
+    background-color: #222222;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.featured-menu h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between menu items */
+}
+
+.menu-item {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.price {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffcc00; /* Bright color for price */
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #333333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.special-offers {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.special-offers h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between offers */
+}
+
+.offer-item {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px; /* Fixed width for each offer item */
+}
+
+.offer-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.offer-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.offer-price {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffcc00; /* Bright color for price */
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #333333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px; /* Space above the button */
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+.offer-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.why-choose-us {
+    background-color: #222222;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.why-choose-us h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between reason items */
+}
+
+.reason-item {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px; /* Fixed width for each reason item */
+}
+
+.reason-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffcc00; /* Bright color for headings */
+}
+
+.reason-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.reason-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.testimonials {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.testimonial-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between testimonial items */
+}
+
+.testimonial-item {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width for each testimonial item */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.testimonial-item h3 {
+    font-size: 18px;
+    color: #ffcc00; /* Bright color for customer names */
+    margin: 0;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
